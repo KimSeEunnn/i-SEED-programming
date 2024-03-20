@@ -1,0 +1,24 @@
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print("100")
+100
+>>> print(100)
+100
+>>> print(50+50)
+100
+>>> print("50+50")
+50+50
+>>> 
+>>> print('%d/%d=%d'%(5, 10, 5/10))
+5/10=0
+>>> 
+>>> print("%04d"%876)
+0876
+>>> print("%5s"%"CookBook")
+CookBook
+>>> print("%1.1f"%123.45)
+123.5
+>>> 
+>>> print("{2:d}{0:d}{1:d}".format(111, 222, 333))
+333111222
+>>> 

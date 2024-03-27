@@ -1,0 +1,64 @@
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+score = int(input("점수를 입력하세요 : "))
+점수를 입력하세요 : 75
+
+if score >= 90 :
+    print("장학생입니다. ^^", end='')
+elif score >= 60 :
+    print("합격입니다. ^^", end='')
+else :
+    print("불합격입니다. ^^", end='')
+
+    
+합격입니다. ^^
+
+num = 5
+print("res = '짝수'") if num % 2 == 0 else print("res = '홀수'")
+res = '홀수'
+
+
+nn = [100, 200, 300, 400, 500 ]
+nn[1] = 777
+print(nn[1])
+777
+nn[1] = [444, 555]
+print(nn[1])
+[444, 555]
+nn[1:4] = [444,555]
+print(nn[1:4])
+[444, 555, 500]
+nn[2:]=[]
+print(nn[2:])
+[]
+
+hap = 0
+for n in range(3333, 10000) :
+    if n%1234 = 0 :
+        
+SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
+>>> hap = 0
+>>> for n in range(3333, 10000) :
+...     if n%1234 == 0 :
+...         continue
+...     if hap+n > 10000 :
+...         break
+...     hap += n
+... print(hap)
+SyntaxError: invalid syntax
+>>> 
+>>> print(hap)
+0
+>>> 
+>>> hap = 0
+>>> for n in range(3333, 10000) :
+...     if n%1234 == 0 :
+...         continue
+...     if hap+n > 100000 :
+...         break
+...     hap += n
+... 
+...     
+>>> print(hap)
+97063
+>>> 

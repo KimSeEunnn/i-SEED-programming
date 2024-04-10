@@ -1,0 +1,93 @@
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+#3
+from tkinter import*
+window=Tk()
+def rdo_change():
+    if var.get()==1:
+        label1.configur(text="벤츠")
+    else:
+        label1.configure(text="포르쉐")
+
+        
+var=IntVar()
+rdo1=Radiobutton(window, text="벤츠", variable=var, value=1, command=rdo_change)
+rdo2=Radiobutton(window, text="포르쉐", variable=var, value=2, command=rdo_change)
+label1=Label(window, text="선택한 차량", fg="red")
+rdo1.pack()
+rdo2.pack()
+label1.pack()
+window.mainloop()
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\EBEL\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "<pyshell#8>", line 3, in rdo_change
+AttributeError: 'Label' object has no attribute 'configur'. Did you mean: 'configure'?
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\EBEL\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "<pyshell#8>", line 3, in rdo_change
+AttributeError: 'Label' object has no attribute 'configur'. Did you mean: 'configure'?
+
+
+#4
+from tkinter import*
+window Tk()
+SyntaxError: invalid syntax
+window=Tk()
+button1=Button(window, text = "버튼1")
+button2=Button(window, text = "버튼2")
+button3=Button(window, text = "버튼3")
+button1.pack(side=LEFT)
+button2.pack(side=LEFT)
+button3.pack(side=LEFT)
+
+from tkinter import*
+window=Tk()
+button1=Button(window, text="버튼1")
+button2=Button(window, text = "버튼2")
+button3=Button(window, text = "버튼3")
+button1.pack(side=RIGHT)
+button2.pack(side=RIGHT)
+button3.pack(side=RIGHT)
+
+from tkinter import*
+window=Tk()
+button1=Button(window, text="버튼1")
+button2=Button(window, text = "버튼2")
+button3=Button(window, text = "버튼3")
+button1.pack(side=TOP)
+button2.pack(side=TOP)
+button3.pack(side=TOP)
+
+from tkinter import*
+window=Tk()
+button1=Button(window, text="버튼1")
+button2=Button(window, text = "버튼2")
+button3=Button(window, text = "버튼3")
+button1.pack(side=BOTTOM)
+button2.pack(side=BOTTOM)
+button3.pack(side=BOTTOM)
+>>> 
+>>> #5
+>>> from tkinter import*
+>>> from time import*
+>>> fnameList=["jeju1.gif", "jeju2.gif", "jeju3.gif", "jeju4.gif", "jeju5.gif", "jeju6.gif",  "jeju7.gif",  "jeju8.gif",  "jeju9.gif"]
+>>> num=0
+>>> def clickNext():
+...     global num
+...     num=(num+1)%len(fnameList)
+...     pLabel.configure(text=fnameList[num])
+... 
+...     
+>>> def clickPrev():
+...     global num
+...     num=(num-1)%len(fnameList)
+...     pLabel.configure(text=fnameList[num])
+... 
+... 
+...     

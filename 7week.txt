@@ -1,0 +1,55 @@
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+#2
+class Car:
+    color=""
+    speed=0
+    def upSpeed(self, value):
+        self.speed+=value
+
+        
+#4
+        
+class Horse:
+    speed=0
+    def__init__(self):
+        
+SyntaxError: invalid syntax
+>>> class Hores:
+...     speed=0
+...     def __init__(self):
+...         self.speed=50
+... 
+...         
+>>> #6
+...         
+>>> class Car:
+...     def method(self):
+...         print("슈퍼 클래스")
+... 
+...         
+>>> class Sedan(Car):
+...     def method(self):
+...         print("서브 클래스")
+... 
+...         
+>>> myCar=Car()
+>>> mySedan=Sedan()
+>>> myCar.method()
+슈퍼 클래스
+>>> mySedan.method()
+서브 클래스
+>>> 
+>>> #7
+>>> class Car:
+...     speed=0
+...     def upSpeed(self, value):
+...         self.speed=self.speed+value
+... 
+...         
+>>> class PVCar(Car):
+...     seatNum=0
+...     def getSeatNum(self):
+...         return self.seatNum
+... 
+...     
